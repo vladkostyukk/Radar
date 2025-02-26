@@ -8,4 +8,9 @@
     <string name="connect_to_the_device">Подключитесь к устройству</string>
     <string name="continue_text">Продолжить</string>
     <string name="add_a_network">Добавить сеть</string>
+    <string name="connect">Подключиться</string>
+    <string name="available">Доступно</string>
+    <string name="network">Сеть</string>
+    <string name="connected">Подключено</string>
+    <string name="status">Статус</string>
 </resources>

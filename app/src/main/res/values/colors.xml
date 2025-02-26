@@ -5,6 +5,9 @@
     <color name="gunmetal">#252F38</color>
     <color name="white_80">#80FFFFFF</color>
     <color name="non_photo_blue">#97E0F3</color>
+    <color name="non_photo_blue_40">#6697E0F3</color>
+    <color name="non_photo_blue_60">#9997E0F3</color>
+    <color name="non_photo_blue_80">#CC97E0F3</color>
     <color name="jet">#302F34</color>
     <color name="jet_70">#B3302F34</color>
 </resources>
