@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Radar</string>
+    <string name="radar_description">Система мониторинга состояния грузовиков в режиме реального времени</string>
+    <string name="radar">Радар</string>
+    <string name="kamaz">Камаз</string>
+    <string name="some_id">Подкатегория</string>
+    <string name="wifi">WiFi</string>
+    <string name="connect_to_the_device">Подключитесь к устройству</string>
 </resources>
