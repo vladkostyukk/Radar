@@ -13,4 +13,10 @@
     <string name="connected">Подключено</string>
     <string name="status">Статус</string>
     <string name="logo">Логотип</string>
+    <string name="menu">Меню</string>
+    <string name="condition">Состояние</string>
+    <string name="maintenance_service">ТО</string>
+    <string name="report">Отчёт</string>
+    <string name="nav_open">Open Navigation Drawer</string>
+    <string name="nav_close">Close Navigation Drawer</string>
 </resources>

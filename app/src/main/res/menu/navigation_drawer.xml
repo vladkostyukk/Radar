@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/main_item"
+        android:title="@string/menu">
+        <menu>
+            <item
+                android:id="@+id/condition_item"
+                android:checkable="true"
+                android:icon="@drawable/ic_outline_home_24px"
+                android:title="@string/condition" />
+            <item
+                android:id="@+id/maintenance_service_item"
+                android:checkable="true"
+                android:icon="@drawable/ic_outline_build_24px"
+                android:title="@string/maintenance_service" />
+            <item
+                android:id="@+id/report_item"
+                android:checkable="true"
+                android:icon="@drawable/ic_outline_text_snippet_24px"
+                android:title="@string/report" />
+        </menu>
+    </item>
+</menu>

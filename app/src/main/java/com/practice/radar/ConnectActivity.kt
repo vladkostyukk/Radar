@@ -1,6 +1,8 @@
 package com.practice.radar
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -35,5 +37,10 @@ class ConnectActivity : AppCompatActivity() {
         availableWifiRecyclerView.adapter = AvailableWifiAdapter(
             listOf("Сеть 1", "Сеть 2", "Сеть 3", "Сеть 4", "Сеть 5")
         )
+
+        val connectButton = findViewById<Button>(R.id.connect_button)
+        connectButton.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
     }
 }

@@ -53,13 +53,13 @@
         android:background="@drawable/bg_available_wifi_layout"
         android:fontFamily="@font/cuprum"
         android:paddingHorizontal="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/connect_button"
         app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         tools:listitem="@layout/item_available_wifi" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/connect_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/space_cadet"
