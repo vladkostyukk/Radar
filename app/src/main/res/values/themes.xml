@@ -1,14 +1,9 @@
 <resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.Radar" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Primary brand color. -->
         <item name="colorPrimary">@color/carrot_orange</item>
         <item name="colorPrimaryVariant">@color/carrot_orange</item>
         <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
-
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
     </style>
 
     <style name="Theme.Radar" parent="Base.Theme.Radar" />
