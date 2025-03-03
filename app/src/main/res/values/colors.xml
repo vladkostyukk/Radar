@@ -2,12 +2,22 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="silver_80">#80B2B2B2</color>
+    <color name="jet">#302F34</color>
+    <color name="space_cadet">#25265F</color>
+    <color name="space_cadet_40">#6625265F</color>
+    <color name="space_cadet_60">#9925265F</color>
+    <color name="space_cadet_80">#CC25265F</color>
+    <color name="carrot_orange">#F8981D</color>
+
+
     <color name="gunmetal">#252F38</color>
     <color name="white_80">#80FFFFFF</color>
     <color name="non_photo_blue">#97E0F3</color>
     <color name="non_photo_blue_40">#6697E0F3</color>
     <color name="non_photo_blue_60">#9997E0F3</color>
     <color name="non_photo_blue_80">#CC97E0F3</color>
-    <color name="jet">#302F34</color>
+    
     <color name="jet_70">#B3302F34</color>
 </resources>

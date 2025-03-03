@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/cuprum"
         android:text="@string/network"
-        android:textColor="@color/non_photo_blue"
+        android:textColor="@color/carrot_orange"
         android:textSize="26sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
