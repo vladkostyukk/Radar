@@ -40,13 +40,13 @@ class MainActivity : AppCompatActivity() {
         navigationView.setNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.condition_item -> {
-                    replaceFragment(ConditionFragment(), R.string.condition)
+                    replaceFragment(ConditionFragment())
                 }
                 R.id.maintenance_service_item -> {
-                    replaceFragment(MaintenanceFragment(), R.string.maintenance_service)
+                    replaceFragment(MaintenanceFragment())
                 }
                 R.id.report_item -> {
-                    replaceFragment(ReportFragment(), R.string.report)
+                    replaceFragment(ReportFragment())
                 }
             }
 
@@ -65,15 +65,18 @@ class MainActivity : AppCompatActivity() {
         })
 
         if (savedInstanceState == null) {
-            replaceFragment(ConditionFragment(), R.string.condition)
+            replaceFragment(ConditionFragment())
         }
     }
 
-    private fun replaceFragment(fragment: Fragment, titleId: Int) {
+    private fun replaceFragment(fragment: Fragment) {
         val transaction = supportFragmentManager.beginTransaction()
         transaction.replace(R.id.fragment_container, fragment)
         transaction.addToBackStack(null)
         transaction.commit()
+    }
+
+    fun updateToolbarTitle(titleId: Int) {
         toolbar.setTitle(titleId)
     }
 }

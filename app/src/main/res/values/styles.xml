@@ -9,12 +9,16 @@
 
     <style name="NavigationMenuTextStyle" parent="android:Widget.TextView">
         <item name="android:textSize">20sp</item>
-        <item name="android:fontFamily">@font/cuprum</item>
     </style>
 
     <style name="PopupMenuStyle" parent="Widget.AppCompat.PopupMenu">
         <item name="android:textColor">@color/black</item>
         <item name="popupMenuBackground">@color/white</item>
+    </style>
+
+    <style name="MaterialCalendar" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimary">@color/carrot_orange</item>
     </style>
 
 </resources>

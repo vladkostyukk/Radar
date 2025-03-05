@@ -5,6 +5,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:fitsSystemWindows="true"
     tools:context=".MainActivity"
     tools:openDrawer="start">
@@ -38,7 +39,7 @@
         android:layout_gravity="start"
         android:background="@color/white"
         app:headerLayout="@layout/header_navigation_drawer"
-        app:menu="@menu/navigation_drawer"
-        app:itemTextAppearance="@style/NavigationMenuTextStyle"/>
+        app:itemTextAppearance="@style/NavigationMenuTextStyle"
+        app:menu="@menu/navigation_drawer" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

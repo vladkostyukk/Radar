@@ -11,9 +11,15 @@ import android.widget.Toast
 import androidx.core.view.MenuProvider
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
+import com.practice.radar.MainActivity
 import com.practice.radar.R
 
 class ConditionFragment : Fragment(), MenuProvider {
+
+    override fun onResume() {
+        super.onResume()
+        (requireActivity() as? MainActivity)?.updateToolbarTitle(R.string.condition)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
