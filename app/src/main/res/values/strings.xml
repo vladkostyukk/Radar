@@ -19,4 +19,6 @@
     <string name="report">Отчёт</string>
     <string name="nav_open">Open Navigation Drawer</string>
     <string name="nav_close">Close Navigation Drawer</string>
+    <string name="node_status_archive">Архив СУ</string>
+    <string name="maintenance_archive">Архив ТО</string>
 </resources>

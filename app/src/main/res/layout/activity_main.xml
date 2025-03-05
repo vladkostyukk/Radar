@@ -21,8 +21,7 @@
             android:background="?attr/colorPrimary"
             android:elevation="4dp"
             android:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            app:title="@string/condition" />
+            app:popupTheme="@style/PopupMenuStyle" />
 
         <FrameLayout
             android:id="@+id/fragment_container"

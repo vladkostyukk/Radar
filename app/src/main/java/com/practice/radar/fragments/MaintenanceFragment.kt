@@ -1,6 +1,7 @@
 package com.practice.radar.fragments
 
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuInflater
@@ -9,17 +10,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.view.MenuProvider
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
 import com.practice.radar.R
 
-class ConditionFragment : Fragment(), MenuProvider {
+class MaintenanceFragment : Fragment(), MenuProvider {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_condition, container, false)
+        return inflater.inflate(R.layout.fragment_maintenance, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -28,16 +28,17 @@ class ConditionFragment : Fragment(), MenuProvider {
     }
 
     override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
-        menuInflater.inflate(R.menu.menu_condition, menu)
+        menuInflater.inflate(R.menu.menu_maintenance, menu)
     }
 
     override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
         return when (menuItem.itemId) {
-            R.id.node_status_archive_item -> {
-                Toast.makeText(requireContext(), "Архив СУ", Toast.LENGTH_SHORT).show()
+            R.id.maintenance_archive_item -> {
+                Toast.makeText(requireContext(), "Архив ТО", Toast.LENGTH_SHORT).show()
                 true
             }
             else -> false
         }
     }
+
 }

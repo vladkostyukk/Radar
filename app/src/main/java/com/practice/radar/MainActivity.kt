@@ -1,7 +1,6 @@
 package com.practice.radar
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -11,6 +10,8 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationView
+import com.practice.radar.fragments.ConditionFragment
+import com.practice.radar.fragments.MaintenanceFragment
 import com.practice.radar.fragments.ReportFragment
 
 class MainActivity : AppCompatActivity() {
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         drawerLayout = findViewById(R.id.drawer_layout)
         toolbar = findViewById(R.id.toolbar)
+        setSupportActionBar(toolbar)
         navigationView = findViewById(R.id.nav_view)
 
         val toggle = ActionBarDrawerToggle(
@@ -33,17 +35,18 @@ class MainActivity : AppCompatActivity() {
 
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
+        navigationView.setCheckedItem(R.id.condition_item)
 
         navigationView.setNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.condition_item -> {
-                    Toast.makeText(this, "Account Details", Toast.LENGTH_SHORT).show()
+                    replaceFragment(ConditionFragment(), R.string.condition)
                 }
                 R.id.maintenance_service_item -> {
-                    replaceFragment(ReportFragment())
+                    replaceFragment(MaintenanceFragment(), R.string.maintenance_service)
                 }
                 R.id.report_item -> {
-                    Toast.makeText(this, "You are Logged Out", Toast.LENGTH_SHORT).show()
+                    replaceFragment(ReportFragment(), R.string.report)
                 }
             }
 
@@ -62,14 +65,15 @@ class MainActivity : AppCompatActivity() {
         })
 
         if (savedInstanceState == null) {
-            replaceFragment(ReportFragment())
+            replaceFragment(ConditionFragment(), R.string.condition)
         }
     }
 
-    private fun replaceFragment(fragment: Fragment) {
+    private fun replaceFragment(fragment: Fragment, titleId: Int) {
         val transaction = supportFragmentManager.beginTransaction()
         transaction.replace(R.id.fragment_container, fragment)
         transaction.addToBackStack(null)
         transaction.commit()
+        toolbar.setTitle(titleId)
     }
 }
