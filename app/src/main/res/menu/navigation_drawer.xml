@@ -19,6 +19,12 @@
                 android:checkable="true"
                 android:icon="@drawable/ic_outline_text_snippet_24px"
                 android:title="@string/report" />
+            <item
+                android:id="@+id/admin_item"
+                android:visible="false"
+                android:checkable="true"
+                android:icon="@drawable/ic_admin"
+                android:title="@string/admin" />
         </menu>
     </item>
 </menu>
